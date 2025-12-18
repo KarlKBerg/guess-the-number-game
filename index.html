@@ -13,18 +13,46 @@
   <body>
     <!-- ==== HEADER ==== -->
     <header>
-      <h2 id="Score: 0"></h2>
+      <h2 id="logo">Guess the number</h2>
+      <div class="guesses-remaining">
+        <h1>20</h1>
+        <p>Guesses remaining</p>
+      </div>
+      <h2>Difficulty: Easy</h2>
     </header>
     <!-- ==== END HEADER ====-->
 
     <!-- ==== Main ==== -->
     <main>
       <!-- Level select -->
-      <section id="level-select">
-        <div class="level">
-          <h2 class="level-text">Easy</h2>
-        </div>
-      </section>
+      <aside class="sidebar">
+        <section id="level-select">
+          <!-- Level 1 -->
+          <div class="level completed">
+            <h2 class="level-text">1</h2>
+          </div>
+          <!-- Level 2 -->
+          <div class="level current">
+            <h2 class="level-text">2</h2>
+          </div>
+          <!-- Level 3 -->
+          <div class="level">
+            <h2 class="level-text">3</h2>
+          </div>
+          <!-- Level 4 -->
+          <div class="level">
+            <h2 class="level-text">4</h2>
+          </div>
+          <!-- Level 5 -->
+          <div class="level">
+            <h2 class="level-text">5</h2>
+          </div>
+          <!-- Level 6 -->
+          <div class="level">
+            <h2 class="level-text">6</h2>
+          </div>
+        </section>
+      </aside>
       <!-- End level select -->
 
       <!-- Logo -->
@@ -33,7 +61,9 @@
       </section>
       <!-- End logo -->
 
-      <section id=""></section>
+      <section id="guessed-number">
+        <h2></h2>
+      </section>
     </main>
     <!-- ==== End main ==== -->
   </body>
