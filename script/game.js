@@ -1,6 +1,8 @@
 /* ===== VARIABLES ===== */
+// Show info
+let info = true;
 // Difficulty select
-let dif = "normal";
+let diff = "normal";
 
 // Game started
 let gameStarted = false;
