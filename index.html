@@ -39,7 +39,6 @@
       <!-- Main game -->
       <section id="main-game">
         <h1>Guess the number</h1>
-        <button id="start-game-btn" action="#">Start game</button>
       </section>
       <!-- End main game -->
       <!-- Game rules -->
@@ -54,8 +53,16 @@
           <h3><span class="dif-bold">Easy:</span> 20 guesses</h3>
           <h3><span class="dif-bold">Normal:</span> 10 guesses</h3>
           <h3><span class="dif-bold">Hard:</span>5 guesses</h3>
+          <p>
+            Each difficulty level generates a random number between 0 and 100.
+            After every guess, you will receive a hint telling you whether your
+            guess is too low or too high. When you guess the correct number, you
+            earn 1 point and the game resets with a new number.
+          </p>
         </div>
+        <!-- Start game button -->
       </section>
+      <button id="start-game-btn" action="#">Start game</button>
       <!-- Game started -->
       <section id="game-started" class="hidden">
         <div class="numbers">
