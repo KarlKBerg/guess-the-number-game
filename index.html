@@ -24,46 +24,21 @@
 
     <!-- ==== Main ==== -->
     <main>
-      <!-- Level select -->
-      <aside class="sidebar">
-        <section id="level-select">
-          <!-- Level 1 -->
-          <div class="level completed">
-            <h2 class="level-text">1</h2>
-          </div>
-          <!-- Level 2 -->
-          <div class="level current">
-            <h2 class="level-text">2</h2>
-          </div>
-          <!-- Level 3 -->
-          <div class="level">
-            <h2 class="level-text">3</h2>
-          </div>
-          <!-- Level 4 -->
-          <div class="level">
-            <h2 class="level-text">4</h2>
-          </div>
-          <!-- Level 5 -->
-          <div class="level">
-            <h2 class="level-text">5</h2>
-          </div>
-          <!-- Level 6 -->
-          <div class="level">
-            <h2 class="level-text">6</h2>
-          </div>
-        </section>
-      </aside>
-      <!-- End level select -->
+      <!-- Difficulty select -->
+      <section id="difficulty">
+        <button class="dif-select" id="easy" action="#">Easy</button>
+        <button class="dif-select" id="normal" action="#">Normal</button>
+        <button class="dif-select" id="hard" action="#">Hard</button>
+      </section>
+      <!-- End difficulty select-->
 
-      <!-- Logo -->
-      <section id="logo">
+      <!-- Main game -->
+      <section id="main-game">
         <h1>Guess the number</h1>
+        <button id="start-game-btn" action="#">Start game</button>
       </section>
-      <!-- End logo -->
-
-      <section id="guessed-number">
-        <h2></h2>
-      </section>
+      <section id="game-started" class="hidden"></section>
+      <!-- End main-game -->
     </main>
     <!-- ==== End main ==== -->
   </body>
