@@ -12,12 +12,13 @@
       src="https://kit.fontawesome.com/b5a5784c82.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script/game.js"></script>
     <title>Guess the number</title>
   </head>
   <body>
     <!-- ==== HEADER ==== -->
     <header>
-      <h2 id="logo">Guess the number</h2>
+      <a href="index.html"><h2 id="logo">Guess the number</h2></a>
       <h2>Difficulty: Normal</h2>
     </header>
     <!-- ==== END HEADER ====-->
@@ -40,10 +41,14 @@
       </section>
       <!-- End main game -->
       <!-- Game rules -->
-      <section id="game-rules">
+      <section id="game-rules" class="">
         <div class="info-top">
           <h2>Info</h2>
-          <button class="exit-btn" action="#" aria-label="Close info button">
+          <button
+            class="exit-btn"
+            onClick="showHideInfo()"
+            aria-label="Close info button"
+          >
             <i class="fa-solid fa-x"></i>
           </button>
         </div>
@@ -60,25 +65,27 @@
         </div>
         <!-- Start game button -->
       </section>
-      <button id="start-game-btn" class="hidden" action="#">Start game</button>
+      <button id="start-game-btn" class="start-game-btn" onClick="startGame()">
+        Start game
+      </button>
       <!-- Game started -->
-      <section id="game-started" class="">
+      <section id="game-started" class="hidden">
         <div class="numbers">
           <div class="num">
             <h4 class="desc-num">Random number</h4>
-            <h2 class="main-num">?</h2>
+            <h2 class="main-num" id="random-num">?</h2>
           </div>
           <div class="guesses-remaining">
-            <h2>20</h2>
+            <h2 id="guesses">10</h2>
             <p>Guesses remaining</p>
           </div>
           <div class="num">
             <h4 class="desc-num">You guessed</h4>
-            <h2 class="main-num">0</h2>
+            <h2 class="main-num" id="guessed">0</h2>
           </div>
         </div>
-        <input type="number" action="#" />
-        <button class="guess-btn">Guess</button>
+        <input type="number" id="guessedNumber" />
+        <button class="guess-btn" onClick="guessNumber()">Guess</button>
       </section>
       <!-- End main-game -->
     </main>
