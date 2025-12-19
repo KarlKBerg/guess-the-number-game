@@ -8,6 +8,10 @@
       content="A simple, but fun guess the number game. Different levels with increasing difficulty, less guesses and a unlimited feature."
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b5a5784c82.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Guess the number</title>
   </head>
   <body>
@@ -42,7 +46,9 @@
       <section id="game-rules">
         <div class="info-top">
           <h2>Info</h2>
-          <i class="fa-solid fa-x"></i>
+          <button class="exit-btn" action="#" aria-label="Close info button">
+            <i class="fa-solid fa-x"></i>
+          </button>
         </div>
         <div class="dif-info">
           <h3><span class="dif-bold">Easy:</span> 20 guesses</h3>
@@ -51,7 +57,20 @@
         </div>
       </section>
       <!-- Game started -->
-      <section id="game-started" class="hidden"></section>
+      <section id="game-started" class="hidden">
+        <div class="numbers">
+          <div class="random-number">
+            <h4 class="desc-num">Random number</h4>
+            <h2 class="main-num">?</h2>
+          </div>
+          <div class="guessed-number">
+            <h4 class="desc-num">You guessed</h4>
+            <h2 class="main-num">0</h2>
+          </div>
+        </div>
+        <input type="number" action="#" />
+        <button class="guess-btn">Guess</button>
+      </section>
       <!-- End main-game -->
     </main>
     <!-- ==== End main ==== -->
