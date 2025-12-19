@@ -96,7 +96,7 @@ header {
   font-weight: 700;
 }
 /* Start game button */
-#start-game-btn {
+.start-game-btn {
   display: block;
   margin: 0 auto;
   font-size: 4rem;
@@ -110,7 +110,7 @@ header {
   cursor: pointer;
 }
 /* Game screen */
-#game-started {
+.game-started {
   background-color: #111111;
   border-radius: 0.5rem;
   padding: 1.6rem 0;
@@ -162,4 +162,8 @@ header {
   padding: 1rem 3rem;
   background-color: green;
   margin: 0 1.6rem;
+}
+.guess-btn:hover {
+  background-color: #005f00;
+  cursor: pointer;
 }
