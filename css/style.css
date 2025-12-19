@@ -11,6 +11,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
+.hidden {
+  display: none;
+}
 
 /* ==== HEADER ===== */
 header {
