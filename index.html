@@ -18,11 +18,7 @@
     <!-- ==== HEADER ==== -->
     <header>
       <h2 id="logo">Guess the number</h2>
-      <div class="guesses-remaining">
-        <h1>20</h1>
-        <p>Guesses remaining</p>
-      </div>
-      <h2>Difficulty: Easy</h2>
+      <h2>Difficulty: Normal</h2>
     </header>
     <!-- ==== END HEADER ====-->
 
@@ -31,7 +27,9 @@
       <!-- Difficulty select -->
       <section id="difficulty">
         <button class="dif-select" id="easy" action="#">Easy</button>
-        <button class="dif-select" id="normal" action="#">Normal</button>
+        <button class="dif-select selected" id="normal" action="#">
+          Normal
+        </button>
         <button class="dif-select" id="hard" action="#">Hard</button>
       </section>
       <!-- End difficulty select-->
@@ -52,7 +50,7 @@
         <div class="dif-info">
           <h3><span class="dif-bold">Easy:</span> 20 guesses</h3>
           <h3><span class="dif-bold">Normal:</span> 10 guesses</h3>
-          <h3><span class="dif-bold">Hard:</span>5 guesses</h3>
+          <h3><span class="dif-bold">Hard:</span> 5 guesses</h3>
           <p>
             Each difficulty level generates a random number between 0 and 100.
             After every guess, you will receive a hint telling you whether your
@@ -62,15 +60,19 @@
         </div>
         <!-- Start game button -->
       </section>
-      <button id="start-game-btn" action="#">Start game</button>
+      <button id="start-game-btn" class="hidden" action="#">Start game</button>
       <!-- Game started -->
-      <section id="game-started" class="hidden">
+      <section id="game-started" class="">
         <div class="numbers">
-          <div class="random-number">
+          <div class="num">
             <h4 class="desc-num">Random number</h4>
             <h2 class="main-num">?</h2>
           </div>
-          <div class="guessed-number">
+          <div class="guesses-remaining">
+            <h2>20</h2>
+            <p>Guesses remaining</p>
+          </div>
+          <div class="num">
             <h4 class="desc-num">You guessed</h4>
             <h2 class="main-num">0</h2>
           </div>
