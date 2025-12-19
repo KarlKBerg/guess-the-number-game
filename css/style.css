@@ -1,6 +1,6 @@
 @import url(reset.css);
 
-/* ==== HEADER ===== */
+/* ==== MAIN ==== */
 body {
   background: #191919;
   color: white;
@@ -11,6 +11,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
+
+/* ==== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -28,31 +30,5 @@ header {
 .guesses-remaining h1 {
   font-size: 4rem;
 }
-/* ==== ASIDE ==== */
-aside {
-  display: flex;
-  flex-direction: column;
-}
-#level-select {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1.6rem;
-}
-.level {
-  display: flex;
-  background-color: rgb(127, 127, 127);
-  width: 4rem;
-  height: 4rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 2.4rem;
-}
 
-#level-select .completed {
-  background-color: green;
-}
-#level-select .current {
-  background-color: rgb(26, 26, 216);
-}
+/* ==== MAIN GAME ==== */
