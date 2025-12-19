@@ -23,14 +23,6 @@ header {
   padding: 2rem 4rem;
   font-size: 2.4rem;
 }
-.guesses-remaining {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.guesses-remaining h1 {
-  font-size: 4rem;
-}
 
 /* ==== MAIN GAME ==== */
 /* Difficulty buttons */
@@ -47,6 +39,10 @@ header {
   padding: 1rem 3rem;
   background-color: blue;
 }
+.dif-select:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 .selected {
   background-color: green;
 }
@@ -57,6 +53,7 @@ header {
   text-align: center;
   margin-bottom: 2.4rem;
 }
+
 /* Game rules */
 #game-rules {
   width: 100%;
@@ -82,6 +79,10 @@ header {
   justify-self: end;
   font-size: 2.4rem;
 }
+.info-top button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 .dif-info {
   display: flex;
   flex-direction: column;
@@ -103,4 +104,62 @@ header {
   color: white;
   padding: 1rem 3rem;
   background-color: green;
+}
+#start-game-btn:hover {
+  background-color: #005f00;
+  cursor: pointer;
+}
+/* Game screen */
+#game-started {
+  background-color: #111111;
+  border-radius: 0.5rem;
+  padding: 1.6rem 0;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+.num {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+.desc-num {
+  font-size: 2.4rem;
+}
+.main-num {
+  font-size: 8rem;
+}
+.guesses-remaining {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.guesses-remaining h2 {
+  font-size: 4rem;
+}
+#game-started input {
+  background-color: white;
+  width: 8rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+.guess-btn {
+  font-size: 2.4rem;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem 3rem;
+  background-color: green;
+  margin: 0 1.6rem;
 }
