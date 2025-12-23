@@ -36,6 +36,7 @@ function startGame() {
     gameScreen.classList.add("hidden");
   }
 }
+
 // Toggle info
 function showHideInfo() {
   if (info) {
@@ -46,6 +47,7 @@ function showHideInfo() {
     info = true;
   }
 }
+
 function guessNumber() {
   console.log(gameStarted);
   if (guessedNumber !== randomNumber) {
