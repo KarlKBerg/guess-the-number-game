@@ -24,7 +24,6 @@ function startGame() {
     // Game screen
     gameScreen.classList.add("game-started");
     gameScreen.classList.remove("hidden");
-    console.log(gameStarted);
   } else {
     let startGameBtn = document.getElementById("start-game-btn");
     let gameScreen = document.getElementById("game-started");
@@ -49,10 +48,8 @@ function showHideInfo() {
 }
 
 function guessNumber() {
-  console.log(gameStarted);
   if (guessedNumber !== randomNumber) {
     guesses--;
-    console.log(guesses);
     if (guesses > 0) {
       guessedNumber = Number(document.getElementById("guessedNumber").value);
       document.getElementById("guessed").textContent = guessedNumber;
