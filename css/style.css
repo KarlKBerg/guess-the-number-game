@@ -168,3 +168,6 @@ header {
   background-color: #005f00;
   cursor: pointer;
 }
+#hint {
+  margin-top: 1.6rem;
+}
