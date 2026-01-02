@@ -14,6 +14,7 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
 //Hide-show start button and game screen
 // Start game
 function startGame() {
+  document.getElementById("guesses").textContent = guesses;
   gameStarted = true;
   if (gameStarted) {
     let startGameBtn = document.getElementById("start-game-btn");
@@ -44,6 +45,48 @@ function showHideInfo() {
     info = false;
   } else {
     info = true;
+  }
+}
+// Sett difficulty
+const diffBtnEasy = document.getElementById("easy");
+const diffBtnNormal = document.getElementById("normal");
+const diffBtnHard = document.getElementById("hard");
+
+diffBtnEasy.addEventListener("click", () => {
+  diff = "easy";
+  difficulty();
+});
+
+diffBtnNormal.addEventListener("click", () => {
+  diff = "normal";
+  difficulty();
+});
+
+diffBtnHard.addEventListener("click", () => {
+  diff = "hard";
+  difficulty();
+});
+
+function difficulty() {
+  gameStarted = false;
+  const diffText = document.getElementById("diff-text");
+
+  diffBtnEasy.classList.remove("selected");
+  diffBtnNormal.classList.remove("selected");
+  diffBtnHard.classList.remove("selected");
+
+  if (diff === "easy") {
+    guesses = 20;
+    diffBtnEasy.classList.add("selected");
+    diffText.textContent = "Difficulty: Easy";
+  } else if (diff === "normal") {
+    guesses = 10;
+    diffBtnNormal.classList.add("selected");
+    diffText.textContent = "Difficulty: Normal";
+  } else {
+    guesses = 5;
+    diffBtnHard.classList.add("selected");
+    diffText.textContent = "Difficulty: Hard";
   }
 }
 
