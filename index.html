@@ -12,14 +12,14 @@
       src="https://kit.fontawesome.com/b5a5784c82.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script/game.js"></script>
+    <script src="script/game.js" defer></script>
     <title>Guess the number</title>
   </head>
   <body>
     <!-- ==== HEADER ==== -->
     <header>
       <a href="index.html"><h2 id="logo">Guess the number</h2></a>
-      <h2>Difficulty: Normal</h2>
+      <h2 id="diff-text">Difficulty: Normal</h2>
     </header>
     <!-- ==== END HEADER ====-->
 
@@ -27,11 +27,9 @@
     <main>
       <!-- Difficulty select -->
       <section id="difficulty">
-        <button class="dif-select" id="easy" action="#">Easy</button>
-        <button class="dif-select selected" id="normal" action="#">
-          Normal
-        </button>
-        <button class="dif-select" id="hard" action="#">Hard</button>
+        <button class="dif-select" id="easy">Easy</button>
+        <button class="dif-select selected" id="normal">Normal</button>
+        <button class="dif-select" id="hard">Hard</button>
       </section>
       <!-- End difficulty select-->
 
