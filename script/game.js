@@ -91,6 +91,8 @@ function difficulty() {
 }
 
 function guessNumber() {
+  if (!gameStarted) return;
+  const hint = document.getElementById("hint");
   if (guessedNumber !== randomNumber) {
     guesses--;
     if (guesses > 0) {
@@ -99,19 +101,19 @@ function guessNumber() {
 
       document.getElementById("guesses").textContent = guesses;
       if (guessedNumber < randomNumber) {
-        console.log("Too low, try again!");
+        hint.textContent = "Too low, try again!";
       } else {
-        console.log("Too high, try again!");
+        hint.textContent = "Too high, try again!";
       }
     } else {
       document.getElementById("random-num").textContent = randomNumber;
       guessedNumber = Number(document.getElementById("guessedNumber").value);
-      console.log("You lost, try again");
+      hint.textContent = "You lost, try again";
       gameStarted = false;
       document.getElementById("guesses").textContent = guesses;
     }
   } else {
-    console.log("Congratulations!");
+    hint.textContent = "Congratulations!";
     gameStarted = false;
   }
 }
